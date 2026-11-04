@@ -46,3 +46,8 @@ print(range_array)
 
 random_array2 = np.random.random((5, 3))
 print(random_array2)
+
+#pseudorandom numbers
+np.random.seed(0)
+random_array3 = np.random.random((5, 3))
+print(random_array3)
