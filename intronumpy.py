@@ -51,3 +51,32 @@ print(random_array2)
 np.random.seed(0)
 random_array3 = np.random.random((5, 3))
 print(random_array3)
+
+
+#viewing arrays
+
+print(np.unique(zeros))
+
+#manipulating and comparing arrays
+
+
+arithmetic_array = np.array([1, 2, 3, 4, 5])
+added_array = arithmetic_array + 5
+print(added_array)
+
+array1 = np.array([1, 2, 3])
+array2 = np.array([4, 5, 6])
+
+sum_array = array1 + array2
+print(sum_array)
+
+#reshaping arrays
+array3 = np.array([[[1, 2, 3]], [[1, 2, 3]], [[1,2,3]]])
+print(array3)
+
+array4 = array3 * a3
+
+print(array4)
+
+#aggregation
+print(np.sum(array1))
