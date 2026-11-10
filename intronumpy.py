@@ -80,3 +80,14 @@ print(array4)
 
 #aggregation
 print(np.sum(array1))
+
+print(array3.shape)
+print(array3)
+print(array3.reshape(3, 3))
+print(array3.reshape(3, 3, 1))
+
+#dot product
+array5 = np.random.randint(0, 10, size=(2, 3))
+array6 = np.random.randint(0, 10, size=(3, 2))
+dot_product = np.dot(array5, array6)
+print(dot_product)
