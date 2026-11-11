@@ -118,3 +118,17 @@ print(total_sales)
 
 weekly_sales["Total ($)"] = total_sales
 print(weekly_sales)
+
+#comparison operators
+array7 = np.array([1, 2, 3])
+print(array7 > 3)   
+print(array7 < a1)
+
+array8 = np.array([1, 2, 3,4, 5, 6, 7, 8, 9])
+print(np.sort(array8))
+
+
+#sorting arrays
+random_array4 = np.random.randint(0, 10, size=(3, 5))
+print(random_array4)
+print(np.sort(random_array4))
