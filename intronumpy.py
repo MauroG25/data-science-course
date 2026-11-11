@@ -91,3 +91,30 @@ array5 = np.random.randint(0, 10, size=(2, 3))
 array6 = np.random.randint(0, 10, size=(3, 2))
 dot_product = np.dot(array5, array6)
 print(dot_product)
+
+
+
+#dot example(nut butter sales)
+
+np.random.seed(0)
+sales_amounts = np.random.randint(20, size=(5, 3))
+print(sales_amounts)
+
+np.random.seed(0)
+prices = np.random.randint(1, 10, size=(1, 3))
+print(prices)
+
+total_revenue = np.dot(sales_amounts, prices.T)
+print(total_revenue)
+
+weekly_sales = pd.DataFrame(sales_amounts, index=["Mon", "Tue", "Wed", "Thu", "Fri"], columns=["Almond butter", "Peanut butter", "Cashew butter"])  
+print(weekly_sales)
+
+prices_df = pd.DataFrame(prices, index=["Price"], columns=["Almond butter", "Peanut butter", "Cashew butter"])
+print(prices_df)
+
+total_sales = weekly_sales.dot(prices_df.T)
+print(total_sales)
+
+weekly_sales["Total ($)"] = total_sales
+print(weekly_sales)
