@@ -1,6 +1,9 @@
 import numpy as np
 import pandas as pd
 import random
+import matplotlib.pyplot as plt
+import matplotlib.image as imread
+
 
 ##data types and atributes
 
@@ -132,3 +135,7 @@ print(np.sort(array8))
 random_array4 = np.random.randint(0, 10, size=(3, 5))
 print(random_array4)
 print(np.sort(random_array4))
+print(np.argsort(random_array4))
+
+panda = imread.imread("images/numpy-panda.jpeg")
+print(type(panda))
