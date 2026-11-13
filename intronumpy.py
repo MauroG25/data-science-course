@@ -139,3 +139,34 @@ print(np.argsort(random_array4))
 
 panda = imread.imread("images/numpy-panda.jpeg")
 print(type(panda))
+
+
+#make a plot from a dictionary
+car_sales = {
+    "toyota": 100,
+    "honda": 80,
+    "ford": 120
+}
+
+fig, ax = plt.subplots()
+ax.bar(car_sales.keys(), car_sales.values())
+plt.show()
+
+#4 plots in one figure
+fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(10, 10))
+plt.show()
+
+
+#plotting from pandas df
+
+df = pd.read_csv("car-sales.csv")
+print(df)
+
+df["Price"] = df["Price"].str.replace('[\$\,\.]','', regex=True).str[:-2].astype(int)
+
+print(df)
+
+df["date"] = pd.date_range("1/1/2020", periods=len(df))
+
+print(df)
+
