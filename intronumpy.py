@@ -170,3 +170,12 @@ df["date"] = pd.date_range("1/1/2020", periods=len(df))
 
 print(df)
 
+x = np.random.rand(10, 4)
+
+df2 = pd.DataFrame(x, columns=["a", "b", "c", "d"])
+
+df2.plot.bar()
+plt.show()
+
+df.plot(x="Make", y ="Odometer (KM)", kind="bar" )
+plt.show()
